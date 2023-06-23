@@ -10,6 +10,27 @@ $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
   gap: 2rem;
 }
+hr {
+  margin: 0;
+  border-color: black;
+  border-width: 10px;
+}
+.message {
+  h1,
+  h3 {
+    font-family: "Pacifico", cursive;
+    color: rgb(240, 240, 240);
+    font-weight: bolder;
+    text-align: center;
+  }
+  h1 {
+    font-size: 4.5rem;
+  }
+  padding-block: 20em;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://th.bing.com/th/id/R.c971e04bc9a6a61fca62cd33a35bbf20?rik=L0DhLP5Ijddt%2bQ&pid=ImgRaw&r=0");
+  background-size: cover;
+}
 
 // section {
 //     padding: 5rem 9%;
@@ -83,13 +104,31 @@ $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   margin-bottom: 3em;
 }
 
+.slide-landmark {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border-radius: 15px;
+  .image {
+    border-radius: 15px;
+  }
+}
+
 .swiper-slide {
   width: 100%;
 }
 .heading {
-  padding-block: 1em;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: auto;
+  color: rgb(240, 240, 240);
+  font-weight: bolder;
   font-size: 2rem;
   text-align: center;
+
+  width: fit-content;
+  padding: 0.5em;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 2em;
 }
 
 // .heading{
@@ -134,7 +173,10 @@ $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 //     }
 // }
 .landmark {
-  padding-top: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/free-photo/multi-ed-fish-swarm-soft-coral-tropical-reef-generated-by-ai_188544-10058.jpg?t=st=1687534752~exp=1687535352~hmac=f9543d96f798d6db9ca2d7441c15c243212bb3bf092cc51077af43b2d2661172&w=1380");
+  background-size: cover;
+  padding-top: 1em;
   .slide {
     width: 35rem;
     height: 30rem;
@@ -166,6 +208,6 @@ $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 :host ::ng-deep .p-button {
   font-size: 2rem;
 }
-.marginButton{
+.marginButton {
   margin-bottom: 1.5em;
 }

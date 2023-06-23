@@ -12,14 +12,16 @@ section {
   padding: 5rem 9%;
 }
 * {
-  font-family: "poppins", sans-serif;
+  font-family: "Kalam", cursive;
+  font-family: "Pacifico", cursive;
+  font-family: "Tenor Sans", sans-serif;
   margin: 0;
   padding: 0;
   border: none;
   text-decoration: none;
   outline: none;
   text-transform: capitalize;
-  transition: 0.5s linear;
+  // transition: 0.5s linear;
 }
 html {
   font-size: 65.5%;
@@ -38,5 +40,14 @@ html {
   }
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.p-rating-icon.p-rating-icon-active {
+  color: #f0ad4e !important;
+}

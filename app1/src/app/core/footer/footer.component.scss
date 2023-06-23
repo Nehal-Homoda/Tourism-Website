@@ -1,49 +1,46 @@
-$green:#219150;
-$black:#10221b;
-$white:#fff;
-$light-bg:#eee;
-$border:2rem solid black;
-$box-shadow:0 0.5rem 1rem rgba(0,0,0,.1);
+$green: #aaffcd;
+$black: #10221b;
+$white: #fff;
+$light-bg: #eee;
+$border: 2rem solid black;
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 
-@mixin grid($val){
-    display: grid;
-    grid-template-columns:repeat(auto-fit,minmax($val,1fr));
-    gap:2rem;
-
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 2rem;
 }
-.footer{
-   // background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-    background-position: center;
-    background-size:cover ;
-    background-attachment: fixed;
-    .box-container{
-        @include grid(25rem);
-        .box{
-            h3{
-                font-size:2rem;
-                padding: 1.5rem 0 ;
-                color:$white ;
-            }
-            a{
-                display: block;
-                font-size: 1.5rem;
-                color: $white;
-                padding: 1rem 0;
-                i{
-                    color: $green;
-                    padding-right: 0.5rem;
-                }
-                &:hover{
-                    color: $green;
-                    i{
-                        padding-right: 2rem;
-                    }
-                }
+.footer {
+  // background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/free-photo/camel-caravan-desert-sunrise-ai-generated-image_511042-1678.jpg?t=st=1687536565~exp=1687537165~hmac=df225ed9cea5e759395d1253d5b1b7271d4cc4f3061baaba7d87c60abb4ce63a&w=1480");
+  background-size: cover;
+  background-position: 50%;
 
-            }
+  .box-container {
+    @include grid(25rem);
+    .box {
+      h3 {
+        font-size: 2rem;
+        padding: 1.5rem 0;
+        color: $white;
+      }
+      a {
+        display: block;
+        font-size: 1.5rem;
+        color: $white;
+        padding: 1rem 0;
+        i {
+          color: $green;
+          padding-right: 0.5rem;
         }
+        &:hover {
+          color: $green;
+          i {
+            padding-right: 2rem;
+          }
+        }
+      }
     }
-
-
-
+  }
 }
