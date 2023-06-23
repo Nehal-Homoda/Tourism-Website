@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { CityComponent } from './city/city/city.component';
+//import { CityComponent } from './city/city/city.component';
 import { AgencyComponent } from './agency/agency/agency.component';
 import { TripsComponent } from './trip/trips/trips.component';
 import { AgencyDetailsComponent } from './agency/agency-details/agency-details.component';
@@ -20,7 +20,7 @@ const routes: Routes = [
   { path: 'aboutUs', component: AboutUsComponent },
   { path: 'contactUs', component: ContactUsComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'city', component: CityComponent },
+ // { path: 'city', component: CityComponent },
   { path: 'agency', component: AgencyComponent },
   { path: 'trip', component: TripsComponent },
   { path: 'agency/details', component: AgencyDetailsComponent },
