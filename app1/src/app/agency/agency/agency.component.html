@@ -1,13 +1,19 @@
 <div class="container">
-    <p-card onclick="" *ngFor="let item of Agency" header={{item.agency_name}} subheader="Card Subheader"
-        [style]="{ width: '360px' }">
-
-        <p>
-
-
-        </p>
-        <p-button (onClick)="navTo('/agency/details')" routerLinkActive="router-link-active"  label="Details" styleClass="p-button-rounded p-button-danger"></p-button>
-        <!-- <p>
+  <p-card
+    onclick=""
+    *ngFor="let item of Agency"
+    header="{{ item.agency_name }}"
+    subheader="Card Subheader"
+    [style]="{ width: '360px' }"
+  >
+    <p></p>
+    <p-button
+      (onClick)="navTo('/agency/details')"
+      routerLinkActive="router-link-active"
+      label="Details"
+      styleClass="p-button-rounded p-button-danger"
+    ></p-button>
+    <!-- <p>
            cost :{{trip.trip_cost}}
            
         </p>
@@ -19,8 +25,5 @@
             EndDate :{{trip.trip_returndate}}
             
          </p> -->
-
-
-
-    </p-card>
+  </p-card>
 </div>
